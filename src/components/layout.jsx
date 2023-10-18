@@ -3,15 +3,16 @@ import React from 'react';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className='body'>
       <header>
-        <h1>Mon Application</h1>
       </header>
       <main>
         {children}
       </main>
       <footer>
-        <p>© 2023 Mon Application</p>
+        <img className="logofooter"src='./assets/logo/logo-Footer.png'alt="logo footer de kasa"/>
+        <p className='footerletter'>© 2020 Kasa. All rights reserved</p>
+     
       </footer> 
     </div>
   )

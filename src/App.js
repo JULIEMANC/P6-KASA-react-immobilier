@@ -4,8 +4,7 @@ import Accueil from './pages/homepage';
 import About from './pages/about';
 import Errorpage from './pages/errorpage';
 import Lodging from './pages/lodging';
-import './Style/index.scss';
-import'./composants/banner';
+import'./components/banner';
 
 function App() {
   return (

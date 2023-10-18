@@ -1,4 +1,4 @@
-import Layout from "../composants/layout";
+import Layout from "../components/layout";
 
 
 const About = () => {
