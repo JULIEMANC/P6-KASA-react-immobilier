@@ -1,18 +1,11 @@
 import Layout from "../composants/layout";
 import CardsContains from "../composants/cardsContains";
 
-
 const Accueil = () => {
-
     return (
         <Layout>
-            <img src="/assets/logo/logo.png" alt="logo "/>
-            <p>Accueil</p>
-         
+            <img src="/assets/logo/logo.png" alt="logo "/>         
             <CardsContains/>
-
-
-          
         </Layout>
     )
 }
