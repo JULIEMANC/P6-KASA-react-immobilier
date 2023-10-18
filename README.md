@@ -8,24 +8,22 @@ Vérifier que Node.js et Npm sont bien installés avec la commande : `node -v` e
 Faites la commande : `npx create-react-app .`
 Maintenant vous pouvait installer les dépendance ( react-router-dom ou encore Sass).
 Et pour lancer le serveur react, faites la commande : `npm start`.
+Installer Sass dans le git bash avec la commande : `npm install sass`
 
 
 -Instruction d'utilisation : 
-Aller recuperer sur Github à l'adresse ("https://github.com/JULIEMANC/P6-KASA-react-immobilier"), sur le bouton vert "Code ", si vous cliquez dessus, apparait plusieurs possibilitées : choisir "Ouvrir avec Github DESKTOP"
+Aller recuperer sur Github à l'adresse ("https://github.com/JULIEMANC/P6-KASA-react-immobilier"), sur le bouton vert "Code ", si vous cliquez dessus, apparait plusieurs possibilitées : choisir "Ouvrir avec Github Desktop"
 
 -Statut du projet :
-Phase de création 
-
--Phase de developpement
+En phase de création
 
 
--L'environnement du projet 
+-Liens utiles : 
+Télécharger l'extension "Grepper"
+Ecrivez : how to create route with react-router-dom react.js => vous aurez la configuration à suivre.
 
-
-
-
--Liste des technologies utilisées
-
+`https://chrisdevcode.hashnode.dev/how-to-create-a-layout-component-react
+`
 -Bugs et corrections éventuelles apportées
 
 
