@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Accueil from './pages/homepage';
 import About from './pages/about';
 import Errorpage from './pages/errorpage';
-import Lodging from './pages/lodging';
+import Housing from './pages/housing';
 import'./components/banner';
+import './components/slides';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path='/' element={<Accueil/>} />
           <Route path='/about' element={<About />} />
           <Route path='*' element={<Errorpage/>} />
-          <Route path ='/lodging' element={<Lodging/>}/>
+          <Route path ='/housing' element={<Housing/>}/>
         </Routes>
       </Router>
     </div>

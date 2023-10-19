@@ -7,9 +7,9 @@ const homepage = () => {
         <Layout>
            
             <Banner/>    
-            <div class="onepage">
+           
 <CardsContains/>
-            </div>
+          
             
         </Layout>
     )
