@@ -1,7 +1,13 @@
-const Slides =({alt,src}) =>{
-  
-    console.log(src?.lenght)
-    return(<div></div>) 
+
+const Slides =({alt,pictures}) =>{
+    return(<div>
+    {pictures.map((picture, index)=>(
+        <div key={index}>
+            <img src={picture} alt={alt}/>
+            </div>
+    ))}    
+
+    </div>) 
 }
 
 
