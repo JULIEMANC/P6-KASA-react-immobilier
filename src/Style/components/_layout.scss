@@ -1,12 +1,39 @@
 main{ height: 100%;
 position: relative;}
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav{
+    display: flex;
+
+}
+.navlink{
+    color: #FF6060;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-right: 50px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
 footer{
     height: 209px;
     padding: 66px 464px 29px 463px;
     background-color: #000;
     position: relative;
 }
+.logofooter {
+    margin-left: 54%;
+    margin-bottom: 3%;
+}
 .footerletter{
     color: white;
     size: 24px;
+    margin-left: 50%;
 }
