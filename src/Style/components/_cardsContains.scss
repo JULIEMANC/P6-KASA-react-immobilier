@@ -1,27 +1,28 @@
 .card{
-    margin-top: 50px;
+    margin-top: 5%;
     background-color: #F6F6F6;
-    border-radius: 25px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-around;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
+    margin-bottom:3% ;
 }
 
 .photocard{
-    width: 340px;
+    width: 75%;
     height: 340px;
-    border-radius: 25px;
-    margin-top: 30%;
-    margin-left: 30%;
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 20%;
     object-fit: cover;
     position: relative;
-
 }
+
 h2{
-    font-size: 13px;
+    font-size: 14px;
     position: absolute;
-  
+    margin-left: 7%;
 }
