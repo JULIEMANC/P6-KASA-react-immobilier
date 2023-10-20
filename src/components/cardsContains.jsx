@@ -7,7 +7,7 @@ const CardsContains = () => {
       {logements.map((logement, index) => (        
         <Link className="card" key={index} to={`/housing/${logement.id}`}> 
           <img className="photocard" src={logement.cover} alt={logement.title} />
-          <h2>{logement.title}</h2>      
+          <h2 className="subtitle">{logement.title}</h2>      
         </Link>
       ))}
     </div>

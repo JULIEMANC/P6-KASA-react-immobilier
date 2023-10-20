@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@300;400&display=swap');
+// Breakpoints 
+
+// @mixin mobile {
+//     @media screen and (max-width: 767px) {
+//         @content;
+//     }
+// }
+
+// @mixin tablette {
+//     @media screen and (min-width: 768px) and (max-width: 1023px) {
+//         @content;
+//     }
+// }
+
+// @mixin desktop {
+//     @media screen and (min-width:1024px) {
+//         @content;
+//     }
+// }
+
+
+
 *{
     margin: 0;
     padding: 0;

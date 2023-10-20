@@ -6,6 +6,7 @@
     border-radius: 25px;
     opacity: 100%;
     mix-blend-mode: color-burn, black;
+    margin-bottom: 100px;
 }
 
 .picturep{
@@ -16,4 +17,5 @@
     border-radius: 25px;
     opacity: 100%;
     mix-blend-mode: color-burn, black;
+    object-fit: cover;
 }

@@ -13,12 +13,9 @@ const Housing = () => {
   return (
     <Layout>
       {logements.map((logement, index) => (
-  
         <div className="contenerHousing" key={index}>
           <Slides 
-           pictures={logement.pictures}
-            alt={logement.title}
-          />    
+           pictures={logement.pictures} alt={logement.title}/>    
           <h2>{logement.title}</h2>
           <h3>{logement.location}</h3>
           <button>{logement.tags}</button>

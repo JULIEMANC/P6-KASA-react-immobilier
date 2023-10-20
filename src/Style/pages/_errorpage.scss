@@ -1,0 +1,20 @@
+h3 {
+    font-size: 288px;
+    color: #ff6060;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.sentence, .return{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: #ff6060;
+}
+.sentence{
+    font-size: 36px;
+}
+.return{
+    font-size: 18px;
+    margin-bottom: 100px;
+}
