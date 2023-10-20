@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Collapses from"../components/collapses";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <img className="picturep" src="/assets/images/forest.png" alt="forêt verte" />
       </div>
       
-      
+      <Collapses></Collapses>
       {/* const details =[
         { id: 0,
           title="Fiabilité", 

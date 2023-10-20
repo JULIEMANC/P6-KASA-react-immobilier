@@ -1,0 +1,37 @@
+.collapse-button {
+  width: 80%;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  border-color: #ff6060;
+}
+
+img .arrow {
+  display: flex;
+  justify-content: flex-end;
+}
+title {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+.allcollapse {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 25px;
+  margin-left: 380px;
+}
+.collapse-content {
+  width: 80%;
+
+  margin-top: 10px;
+  font-size: 21px;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+}

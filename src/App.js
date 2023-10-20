@@ -6,6 +6,7 @@ import Errorpage from './pages/errorpage';
 import Housing from './pages/housing';
 import'./components/banner';
 import './components/slides';
+import'./components/collapses';
 
 function App() {
   return (
