@@ -4,31 +4,31 @@
   border-radius: 5px;
   background-color: #ff6060;
   color: white;
-  font-size: 24px;
+  font-size:32px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding :15px;
   border-color: #ff6060;
 }
-
-img .arrow {
-  display: flex;
-  justify-content: flex-end;
+.arrow {
+margin-right: 10px;
 }
-title {
+#text{
   display: flex;
   justify-content: flex-start;
   margin-top: 100px;
 }
-
 .allcollapse {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
   margin-left: 380px;
+  margin-top: 50px;
 }
 .collapse-content {
   width: 80%;
-
   margin-top: 10px;
   font-size: 21px;
   overflow-wrap: break-word;

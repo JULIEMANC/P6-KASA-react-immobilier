@@ -26,11 +26,10 @@
         content: "";
         width: 50%;
         height: 30%;
-        background-color: rgba(255, 0, 0, 0.5);
+        box-shadow: inset 1px 1px 1px 1px rgba(224, 48, 48, 0.5);
         position: absolute;
         border-radius: 0 0 0 5px;
         bottom: 0;
-        
            //   background-color: $gradientRed;
       }
      }
@@ -39,14 +38,15 @@
       text-decoration: none;
       color: white;
       font-size: 18px;
+      font-weight: 200;
       margin: 10px 0;
       position: absolute;
       padding: 5px;
       margin-top: -50px;
-      margin-left: 8%;
+      margin-left: 10px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      overflow-wrap: break-word;
       // overflow: hidden;
       // text-overflow: ellipsis;
     }
