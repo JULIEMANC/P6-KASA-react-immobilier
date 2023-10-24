@@ -42,13 +42,13 @@
       margin: 10px 0;
       position: absolute;
       padding: 5px;
-      margin-top: -50px;
+      margin-top: -52px;
       margin-left: 10px;
       display: flex;
       flex-wrap: wrap;
       overflow-wrap: break-word;
-      // overflow: hidden;
-      // text-overflow: ellipsis;
+      text-align: left;
+
     }
   }
 }

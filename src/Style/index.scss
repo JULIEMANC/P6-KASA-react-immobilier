@@ -1,8 +1,12 @@
 @import"./app";
-@import"./components/banner";
-@import"./pages/homepage";
-@import"./components/layout";
-@import "./components/cardsContains";
+
+/*Pages */
 @import"./pages/about";
 @import"./pages/errorpage";
-@import"./components/_collapses.scss"
+@import"./pages/housing";
+
+/*Composants */
+@import"./components/collapses";
+@import"./components/banner";
+@import"./components/layout";
+@import "./components/cardsContains";
