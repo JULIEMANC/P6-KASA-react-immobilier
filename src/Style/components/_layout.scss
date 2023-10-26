@@ -1,5 +1,6 @@
 main{ height: 100%;
 position: relative;}
+
 header{
 display: flex;
 justify-content: space-between;
@@ -7,33 +8,44 @@ align-items: center;
 }
 
 nav{
-    display: flex;
-
+    display: flex
 }
-.navlink{
-    color:$red;
+.navlink {
     font-size: 24px;
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
     margin-right: 50px;
-  &:last-child{
-    margin-right: 0;
+//   &:last-child{
+//     margin-right: 0;
+//   }
+  color: $red;
+  cursor: pointer;
+  &.active,
+  &:hover {
+      text-decoration: underline;
   }
 }
 
 footer{
     height: 209px;
-    padding: 66px 464px 29px 463px;
     background-color: #000;
-    position: relative;
+    display: flex;
+ flex-direction: column;
+    align-items: center;
+  
 }
 .logofooter {
-    margin-left: 45%;
-    margin-bottom: 3%;
+    width: 122px;
+    height: 39px;
+    margin-top: 66px;
 }
 .footerletter{
     color: white;
     size: 24px;
-    margin-left: 42%;
+margin-top: 20px;
+
 }
+
+
+

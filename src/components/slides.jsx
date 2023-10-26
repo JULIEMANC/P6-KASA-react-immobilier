@@ -1,25 +1,3 @@
-
-// const Slides =({alt,pictures}) =>{
-//     return(
-//     <div className="photohousing">
-
-//     {pictures?.map((picture, index)=>(
-//         <div key={index}>
-//             <img src={picture} alt={alt}/>
-//             </div>
-//     ))}    
-
-//     </div>) 
-// }
-
-
-
-
-// export default Slides;
-
-
-
-
 import React, { useState } from "react";
 
 const Slides = ({ alt, pictures }) => {
@@ -44,7 +22,7 @@ const Slides = ({ alt, pictures }) => {
           <div  key={index} style={{ display: index === currentIndex ? "block" : "none" }}>
             <img className="slides"src={picture} alt={alt} />
           </div>
-       ) )};
+       ) )}
 
         <button className="next" onClick={nextSlide} >
           <img alt="flèche next"src="/assets/logo/VectorLeft.png"/>

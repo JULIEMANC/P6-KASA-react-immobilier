@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
   return (
     <div className='body'>
       <header>
-      <img className="logoheader"src='./assets/logo/LOGO.png'alt="logo header"/>
-      <nav>
+      <img className="logoheader"src='../assets/logo/LOGO.png'alt="logo header"/>
+      <nav className='navbar'>
         <Link className='navlink' to="/">Accueil</Link>
         <Link className='navlink'to="/about">A Propos</Link>
       </nav>
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer>
-        <img className="logofooter"src='./assets/logo/logo-footer.png'alt="logo footer de kasa"/>
+        <img className="logofooter"src='../assets/logo/logo-footer.png'alt="logo footer de kasa"/>
         <p className='footerletter'>© 2020 Kasa. All rights reserved</p>
      
       </footer> 

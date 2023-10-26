@@ -1,7 +1,7 @@
 .collapse-button {
   width: 80%;
   height: 80px;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: $red;
   color: white;
   font-size:32px;
@@ -17,21 +17,22 @@ margin-right: 10px;
 #text{
   display: flex;
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .allcollapse {
   display: flex;
   flex-direction: column;
   padding: 15px;
   margin-bottom: 35px;
-  margin-left: 380px;
-  margin-top: 50px;
+  margin-left: 200px;
 }
 .collapse-content {
   width: 80%;
   margin-top: 10px;
-  font-size: 21px;
+  font-size: 18px;
   overflow-wrap: break-word;
   display: flex;
   flex-wrap: wrap;
+color: $red;
+margin-left: 20px;
 }

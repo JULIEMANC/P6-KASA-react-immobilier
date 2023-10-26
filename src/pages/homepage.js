@@ -1,18 +1,19 @@
 import Layout from "../components/layout";
-import CardsContains from "../components/cardsContains";
+import Card from "../components/card";
 import Banner from "../components/banner";
+import logements from "../data/logements.json";
 
-const homepage = () => {
-    return (
-        <Layout>
-           
-            <Banner/>    
-           
-<CardsContains/>
-          
-            
-        </Layout>
-    )
+export default function homepage() {
+  return (
+    <Layout>
+      <div className="home">
+        <Banner />
+        <div className="cards">
+          {logements.map((logement, i) => (
+            <Card Card logement={logement} key={i} />
+          ))}
+        </div>
+      </div>
+    </Layout>
+  );
 }
-
-export default homepage ;

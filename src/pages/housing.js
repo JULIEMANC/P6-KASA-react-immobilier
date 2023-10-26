@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import logements from "../fixture/logements.json";
+import logements from "../data/logements.json";
 import Slides from "../components/slides";
 import { useParams, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
@@ -41,7 +41,7 @@ const Housing = () => {
         <h3 className="locationhousing">{logement?.location}</h3>
         <button className="tags">{logement?.tags}</button>
         <p className="nameP">{logement?.host.name}</p>
-        {/* <img className="owner" alt="owner">{logement?.host.picture}</img> */}
+        {/* <img className="owner" alt="owner"{logement?.host.picture}/> */}
     {/* <img className="stars" alt="stars rating"src="/assets/logo/stars-active">{logement?.rating}</img> */}
 
 
