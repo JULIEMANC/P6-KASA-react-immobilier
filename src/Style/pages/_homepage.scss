@@ -1,4 +1,21 @@
-.home{
+.home {
     max-width: 1240px;
     width: auto;
-}
+    
+    @media (max-width: $small-screen) {
+      max-width: 100%;
+      padding: 20px;
+    }
+    
+    @media (min-width: $medium-screen) and (max-width: $large-screen) {
+      max-width: 800px;
+    }
+    
+    @media (min-width: $large-screen) {
+      max-width: 1240px;
+    }
+  }
+
+  
+  
+  

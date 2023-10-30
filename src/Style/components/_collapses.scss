@@ -1,15 +1,27 @@
 .collapse-button {
-  width: 80%;
-  height: 50px;
+   width: 80%;
+  // height: 50px;
   border-radius: 8px;
   background-color: $red;
   color: white;
   font-size: 25px;
   display: flex;
   justify-content: space-between;
-   padding: 15px;
+  padding: 15px;
   border: none;
   align-items: center;
+  // @media (min-width: $small-screen){
+  //   width: 335px; 
+  //   height: 30px;
+  //         }
+  //         @media (min-width: $medium-screen) {
+  //           width: 450px; 
+  //           height: 40px;
+  //         }
+  //         @media (min-width: $large-screen) {
+  //           width: 582px; 
+  //           height: 52px;
+  //         }
 }
 .arrow {
   margin-right: 10px;
@@ -19,33 +31,32 @@
   justify-content: flex-start;
   margin-top: 80px;
 }
-.allcollapse {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  gap: 10px;
+ .allcollapse {
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
   margin-bottom: 30px;
   margin-top: 10px;
-  align-items: center;
-
+}
+.thiscollapses {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
 }
 .collapse-content {
   font-size: 18px;
   font-weight: lighter;
   overflow-wrap: break-word;
   color: $red;
-  padding: 10px;
-}
-
-.allcollapse.open .collapse-content {
-  display: block;
-  background-color: #f9f4f4;
+  padding: 10px; 
   // width: 80%;
-  border-radius: 3px 3px 10px 10px;
-  // transform: rotate(0deg);
-  // transition: transform 0.9s ease;
 }
-
+.allcollapse.open .collapse-content {
+  // display: block;
+  background-color: #f9f4f4;
+  border-radius: 3px 3px 10px 10px;
+ width: 80%;
+}
 .arrow.rotate {
   transform: rotate(180deg);
   transition: transform 0.5s ease;

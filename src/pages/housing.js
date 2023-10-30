@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import CollapseComponent from "../components/collapses";
 import Slides from "../components/slides";
+import RatingStars from "../components/rating";
 import logements from "../data/logements.json";
 import { useParams, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
@@ -22,7 +23,7 @@ const Housing = () => {
       console.error("404");
     }
   }, [id, navigate]);
-
+  
   return (
     <Layout>
       <div className="contenerHousing">
@@ -36,13 +37,11 @@ const Housing = () => {
             ))}
           </ul>
           <div className="namepictures">
+            <div className="profileLoc">
             <p className="nameP">{logement?.host.name}</p>
             <img className="owner" alt="owner" src={logement?.host.picture} />
-            {/* <div className="rating">
-            {logement?.rating.map((rating, i) => (
-              <span key={i}>{rating}</span>
-            ))} */}
-            {/* </div> */}
+           </div> 
+           <RatingStars rating={logement?.rating}/>
           </div>
         </div>
         <div className="collapsesDescr">
@@ -62,6 +61,3 @@ const Housing = () => {
   );
 };
 export default Housing;
-{
-  /* // {showEquipments && <p>{logement?.equipments}</p>} */
-}
