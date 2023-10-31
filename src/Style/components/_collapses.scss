@@ -1,63 +1,62 @@
 .collapse-button {
-   width: 80%;
-  // height: 50px;
-  border-radius: 8px;
+   width: 100%;
+  border-radius: 10px;  
+  border: none;
   background-color: $red;
   color: white;
   font-size: 25px;
-  display: flex;
-  justify-content: space-between;
   padding: 15px;
-  border: none;
-  align-items: center;
-  // @media (min-width: $small-screen){
-  //   width: 335px; 
-  //   height: 30px;
-  //         }
-  //         @media (min-width: $medium-screen) {
-  //           width: 450px; 
-  //           height: 40px;
-  //         }
-  //         @media (min-width: $large-screen) {
-  //           width: 582px; 
-  //           height: 52px;
-  //         }
+ display: flex;  
+ justify-content: space-between;
+ align-items: center;
 }
+
 .arrow {
   margin-right: 10px;
 }
+
 #text {
   display: flex;
   justify-content: flex-start;
   margin-top: 80px;
 }
- .allcollapse {
-//   display: flex;
-//   flex-direction: column;
-//   position: relative;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-.thiscollapses {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-}
-.collapse-content {
-  font-size: 18px;
-  font-weight: lighter;
-  overflow-wrap: break-word;
-  color: $red;
-  padding: 10px; 
-  // width: 80%;
-}
-.allcollapse.open .collapse-content {
-  // display: block;
-  background-color: #f9f4f4;
-  border-radius: 3px 3px 10px 10px;
- width: 80%;
-}
+
 .arrow.rotate {
   transform: rotate(180deg);
   transition: transform 0.5s ease;
 }
+.thiscollapses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allcollapse {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.collapse-content {
+  background-color: #f9f4f4;
+  border-radius: 3px 3px 10px 10px;
+  font-size: 18px;
+  color: $red;
+ padding: 10px; 
+ width: 100%;
+}
+
+/**collapse page housing**/
+
+.collapsesDescr{
+    display: flex;
+    justify-content: space-between;
+.allcollapse:first-child {
+    margin-right: 76px;
+  }
+    ul{
+      list-style-type: none;
+    }
+  }
+  

@@ -2,16 +2,16 @@
     max-width: 1240px;
     width: auto;
     
-    @media (max-width: $small-screen) {
+    @media (max-width: $ss) {
       max-width: 100%;
       padding: 20px;
     }
     
-    @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    @media (min-width: $ms) and (max-width: $ls) {
       max-width: 800px;
     }
     
-    @media (min-width: $large-screen) {
+    @media (min-width: $ls) {
       max-width: 1240px;
     }
   }

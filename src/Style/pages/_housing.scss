@@ -5,15 +5,15 @@
   border-radius: 25px;
   object-fit: cover;
   display: flex;
-  @media (min-width: $small-screen){
+  @media (min-width: $ss){
     width:335px;
     height: 255px;
        }
-       @media (min-width: $medium-screen) {
+       @media (min-width: $ms) {
     width: 800px;
     height: 350px;
        }
-       @media (min-width: $large-screen) {
+       @media (min-width: $ls) {
         width: 1330px;
   height: 643px;
        }
@@ -38,15 +38,15 @@
   background-color: transparent;
   border-color: transparent;
   top: 50%;
-//   @media (min-width: $small-screen){
+//   @media (min-width: $ss){
 //     width:30px;
 //     height:30px;
     
 //        }
-//        @media (min-width: $medium-screen) {
+//        @media (min-width: $ms) {
     
 //        }
-//        @media (min-width: $large-screen) {
+//        @media (min-width: $ls) {
        
       
 //        }
@@ -54,18 +54,19 @@
 
 
 /*Div Informations en dessous */
+
 .housingtitle {
   font-size: 36px;
   margin-top: 30px;
   color: $red;
   font-weight: lighter;
-    @media (min-width: $small-screen){
+    @media (min-width: $ss){
      font-size:  18px;
            }
-           @media (min-width: $medium-screen) {
+           @media (min-width: $ms) {
         font-size: 25px;
            }
-           @media (min-width: $large-screen) {
+           @media (min-width: $ls) {
            font-size: 36px;
            }
 }
@@ -119,19 +120,7 @@
   height: 64px;
   border-radius: 50%;
 }
-.collapsesDescr{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  .collapse-button{
-    width:582px ;
-    height: 52px;
-  }
-  ul{
-    list-style-type: none;
-  }
-}
+
 .photo-number {
   color:white;
   font-size: 18px;
