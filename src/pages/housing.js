@@ -14,7 +14,7 @@ const Housing = () => {
   useEffect(() => {
     try {
       const logementData = logements.find((item) => item.id === id);
-      if (logementData.id !== id) {
+      if (!logementData) {
         return navigate("/404");
       } else {
         setLogement(logementData);
@@ -27,8 +27,10 @@ const Housing = () => {
   return (
     <Layout>
       <div className="contenerHousing">
+      
         <Slides pictures={logement?.pictures} alt={logement?.title} />
-        <div className="infos">
+         <div className="partInfos"> 
+         <div className="infos">
           <h2 className="housingtitle">{logement?.title}</h2>
           <h3 className="locationhousing">{logement?.location}</h3>
           <ul className="tags">
@@ -36,6 +38,7 @@ const Housing = () => {
               <li key={i}>{tag}</li>
             ))}
           </ul>
+          </div>
           <div className="namepictures">
             <div className="profileLoc">
             <p className="nameP">{logement?.host.name}</p>

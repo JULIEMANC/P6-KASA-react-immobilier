@@ -1,34 +1,36 @@
 .collapse-button {
-   width: 100%;
-  border-radius: 10px;  
+  width: 100%;
+  border-radius: 10px;
   border: none;
   background-color: $red;
   color: white;
   font-size: 25px;
   padding: 15px;
- display: flex;  
- justify-content: space-between;
- align-items: center;
-}
-
-.arrow {
-  margin-right: 10px;
-}
-
-#text {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 80px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+
+  .arrow {
+    margin-right: 10px;
+  }
+
+  #text {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 80px;
+  }
+  .arrow.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+  }
 }
 
-.arrow.rotate {
-  transform: rotate(180deg);
-  transition: transform 0.5s ease;
-}
-.thiscollapses{
+.thiscollapses {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .allcollapse {
   display: flex;
@@ -36,27 +38,56 @@
   margin-bottom: 30px;
   margin-top: 10px;
   width: 80%;
-}
+  position: relative;
+  z-index: 1;
 
-.collapse-content {
-  background-color: #f9f4f4;
-  border-radius: 3px 3px 10px 10px;
-  font-size: 18px;
-  color: $red;
- padding: 10px; 
- width: 100%;
+  .animation {
+    @keyframes slow-collapse-animation {
+      0% {
+        max-height: 0;
+        transform: translateY(-100%);
+      }
+      100% {
+        max-height: 1000px;
+        transform: translateY(0);
+      }
+    }
+  }
+  .animation {
+@keyframes close-collapse-animation {
+  0% {
+    max-height: 1000px;
+  }
+  100% {
+    max-height: 0;
+  }
+}
+    
+  }
+  
+  .collapse-content {
+    animation: slow-collapse-animation 0.5s linear;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    background-color: #f9f4f4;
+    border-radius: 3px 3px 10px 10px;
+    font-size: 18px;
+    color: $red;
+    padding: 10px;
+    width: 100%;
+    transition: max-height 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  }
 }
 
 /**collapse page housing**/
 
-.collapsesDescr{
-    display: flex;
-    justify-content: space-between;
-.allcollapse:first-child {
+.collapsesDescr {
+  display: flex;
+  justify-content: space-between;
+  .allcollapse:first-child {
     margin-right: 76px;
   }
-    ul{
-      list-style-type: none;
-    }
+  ul {
+    list-style-type: none;
   }
-  
+}

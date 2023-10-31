@@ -8,19 +8,17 @@ header {
   align-items: center;
 }
 .logoheader {
-  @media (min-width: $ss) {
+  @media (max-width: $ss) {
     width: 145px;
     height: 46px;
   }
-  @media (min-width: $ms) {
+  @media (max-width: $ms) {
     width: 210px;
     height: 68px;
   }
 }
 
 nav {
-
- 
   ul {
     list-style-type: none;  
     display: flex; 
@@ -41,15 +39,15 @@ nav {
     text-decoration: underline;
   }
 
-  @media (min-width: $ss) {
+  @media (max-width: $ss) {
     font-size: 15px;
     margin-right: 33px;
   }
-  @media (min-width: $ms) {
+  @media (max-width: $ms) {
     font-size: 18px;
     margin-right: 66px;
   }
-  @media (min-width: $ls) {
+  @media (max-width: $ls) {
     font-size: 24px;
     margin-right: 100px;
   }
@@ -72,7 +70,7 @@ footer {
   color: white;
   size: 24px;
   margin-top: 20px;
-  @media (min-width: $ss) {
+  @media (max-width: $ss) {
     font-size: 12px;
   }
 }

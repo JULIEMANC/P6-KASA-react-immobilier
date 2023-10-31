@@ -5,15 +5,15 @@ h1 {
   margin-top: 90px;
   text-align: center;
   font-size: 48px;
-  @media (min-width: $ss){
+  @media (max-width: $ss){
     font-size: 20px;
+  margin-left: 5px;
   }
-  @media (min-width: $ms) {
+  @media (max-width: $ms) {
     font-size: 32px;
+  margin-left: 10px;
   }
-  @media (min-width: $ls) {
-    font-size: 48px;
-  }
+
 }
 .mer {
   width: 100%;
