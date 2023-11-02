@@ -4,17 +4,40 @@
     display: flex;
     justify-content: center;
     margin-top: 150px;
+    @media (max-width: $ms) {
+   font-size: 170px;
+    }
+    @media (max-width: $ss) {
+        font-size: 100px;    
+      }
 }
 .sentence, .return{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 100px; 
+    font-size: 36px;
     color: $red;
 }
 .sentence{
-    font-size: 36px;
+    @media (max-width: $ms) {
+   font-size: 28px;
+   display: flex;
+   justify-content: center;
+    } 
+    @media (max-width: $ss) {
+        font-size: 20px;  
+           display: flex;
+    justify-content: center;
+      }
 }
 .return{
     font-size: 18px;
     margin-bottom: 100px;
+
+    @media (max-width: $ms) {
+   font-size: 18px;
+    }
+    @media (max-width: $ss) {
+        font-size: 14px; 
+      }
 }

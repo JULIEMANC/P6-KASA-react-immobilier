@@ -1,20 +1,8 @@
-.home {
-    max-width: 1240px;
-    width: auto;
-    
-    @media (max-width: $ss) {
-      max-width: 100%;
-      padding: 20px;
-    }
-    
-    @media (min-width: $ms) and (max-width: $ls) {
-      max-width: 800px;
-    }
-    
-    @media (min-width: $ls) {
-      max-width: 1240px;
-    }
-  }
+
+@media only screen and (max-width : 1440px) {body{
+    background-color: rgb(165, 97, 97);
+  }}
+  
 
   
   

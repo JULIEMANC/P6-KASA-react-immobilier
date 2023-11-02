@@ -1,27 +1,34 @@
 main {
+  // height: 100%;
+  // position: relative;
   height: 100%;
   position: relative;
+  max-width: 1440px;
+  width: auto;
+  margin: 0 auto;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 .logoheader {
-  @media (max-width: $ss) {
-    width: 145px;
-    height: 46px;
-  }
   @media (max-width: $ms) {
-    width: 210px;
+    width: 190px;
     height: 68px;
+  }
+  @media (max-width: $ss) {
+    width: 100px;
+    height: 30px;
   }
 }
 
 nav {
   ul {
-    list-style-type: none;  
-    display: flex; 
+    list-style-type: none;
+    display: flex;
     .active {
       text-decoration: underline;
     }
@@ -30,27 +37,28 @@ nav {
 
 .navlink {
   font-size: 24px;
- justify-content: flex-end;
+  justify-content: flex-end;
   text-decoration: none;
-  margin-right: 100px;
   color: $red;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
-
-  @media (max-width: $ss) {
-    font-size: 15px;
-    margin-right: 33px;
-  }
+  &:last-child{
+margin-left: 18px;
+}
   @media (max-width: $ms) {
     font-size: 18px;
-    margin-right: 66px;
+    margin-right: 0px;
+    padding:0px;
+    text-transform: uppercase;
   }
-  @media (max-width: $ls) {
-    font-size: 24px;
-    margin-right: 100px;
+  @media (max-width: $ss) {
+    font-size: 10px;
+    // margin-right: 33px;
+    text-transform: uppercase;
   }
+
 }
 
 footer {
@@ -70,7 +78,7 @@ footer {
   color: white;
   size: 24px;
   margin-top: 20px;
-  @media (max-width: $ss) {
+  @media (min-width: $ss) {
     font-size: 12px;
   }
 }

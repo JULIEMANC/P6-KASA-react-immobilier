@@ -5,30 +5,30 @@
   border-radius: 25px;
   object-fit: cover;
   display: flex;
-  @media (min-width: $ss){
-    width:335px;
-    height: 255px;
-       }
-       @media (min-width: $ms) {
-    width: 800px;
-    height: 350px;
-       }
-       @media (min-width: $ls) {
-        width: 1330px;
-  height: 643px;
-       }
+  @media (max-width: $ms) {
+width: 800px;
+height: 500px;
+      }
 }
+
 .slider {
   display: flex;
   justify-content: center;
   margin-top: 70px;
   position: relative;
+    @media (max-width:$ms) {
+margin-top: 20px;
+  }
+  // @media (max-width: $ss){
+
+  //      }
 }
 .prev {
   left: 0%;
 }
 .next {
   right: 0%;
+  
 }
 .prev,
 .next {
@@ -38,18 +38,7 @@
   background-color: transparent;
   border-color: transparent;
   top: 50%;
-//   @media (min-width: $ss){
-//     width:30px;
-//     height:30px;
-    
-//        }
-//        @media (min-width: $ms) {
-    
-//        }
-//        @media (min-width: $ls) {
-       
-      
-//        }
+
  }
 
 
@@ -59,27 +48,45 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+
+  @media (max-width: $ms) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  // @media (min-width: $ss){
+  // display: flex;
+  // flex-direction: column;
+  // flex-direction: flex-start;
+  // }
+
 .housingtitle {
   font-size: 36px;
   margin-top: 30px;
   color: $red;
   font-weight: lighter;
-    @media (min-width: $ss){
-     font-size:  18px;
-           }
-           @media (min-width: $ms) {
-        font-size: 25px;
-           }
-           @media (min-width: $ls) {
-           font-size: 36px;
-           }
+  @media (max-width: $ms) {
+    font-size: 30px;
+  }
+  @media (max-width: $ss){
+   font-size:  20px;
+         }
 }  
+
 .locationhousing {
   font-size: 20px;
   color: $red;
   font-weight: lighter;
   margin-top: 10px;
+  @media (max-width: $ms) {
+    font-size: 20px;
+
+  }
+  @media (max-width: $ss){
+    font-size:  14px;
+  }
 }
+
 .tags {
   display: flex;
   gap: 10px;
@@ -108,6 +115,14 @@
  align-items: flex-end;
   flex-direction: column;
   margin-bottom: 20px;
+  @media (min-width: $ss){
+    font-size:  12px;
+    padding: 20px;
+          }
+          @media (min-width: $ms) {
+       font-size: 25px;
+       padding: 20px;
+          }
 
   .nameP {
     overflow-wrap: break-word;
@@ -136,16 +151,21 @@
   align-items: center;
   position: absolute;
   bottom: 5%;
+  @media (min-width: $ss) {
+display: none;
+       }
 }
-// .rating{
-//   position: absolute;
-//   list-style-type: none;
-//   display: flex;
-// color: $red;
-// width: 36px;
-// height: 36px;
-// }
 svg{
   width: 36px;
   height: 36px;
+  @media (max-width: $ms) {
+    width: 26px;
+height: 26px;
+       }
+  @media (max-width: $ss){
+  width: 13px;
+  height: 13px;
+          }
+     
 }
+

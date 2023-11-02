@@ -31,6 +31,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+ 
 }
 .allcollapse {
   display: flex;
@@ -40,6 +41,12 @@
   width: 80%;
   position: relative;
   z-index: 1;
+  @media (max-width: $ss){
+    width: 100%;
+      }
+      @media (max-width: $ms) {
+        width: 100%;
+      }
 
   .animation {
     @keyframes slow-collapse-animation {
@@ -62,9 +69,7 @@
     max-height: 0;
   }
 }
-    
-  }
-  
+}
   .collapse-content {
     animation: slow-collapse-animation 0.5s linear;
     overflow: hidden;
@@ -84,6 +89,17 @@
 .collapsesDescr {
   display: flex;
   justify-content: space-between;
+  @media (max-width: $ss){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+      }
+      @media (max-width: $ms) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
   .allcollapse:first-child {
     margin-right: 76px;
   }
