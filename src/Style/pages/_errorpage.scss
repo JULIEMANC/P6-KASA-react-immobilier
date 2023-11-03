@@ -1,43 +1,49 @@
 .error {
-    font-size: 288px;
-    color:$red;
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
-    @media (max-width: $ms) {
-   font-size: 170px;
-    }
-    @media (max-width: $ss) {
-        font-size: 100px;    
-      }
+  font-size: 288px;
+  color: $red;
+  margin-top: 150px;
+  @media (max-width: $ms) {
+    font-size: 100px;
+    margin-top: 40px;
+  }
+  // @media (max-width: $ss) {
+  //     font-size: 100px;
+  //   }
 }
-.sentence, .return{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px; 
-    font-size: 36px;
-    color: $red;
+.return {
+  margin-top: 100px;
+  font-size: 36px;
+  color: $red;
 }
-.sentence{
-    @media (max-width: $ms) {
-   font-size: 28px;
-   display: flex;
-   justify-content: center;
-    } 
-    @media (max-width: $ss) {
-        font-size: 20px;  
-           display: flex;
-    justify-content: center;
-      }
-}
-.return{
+.sentence {
+  margin-top: 100px;
+  font-size: 36px;
+  color: $red;
+  @media (max-width: $ms) {
     font-size: 18px;
-    margin-bottom: 100px;
-
-    @media (max-width: $ms) {
-   font-size: 18px;
-    }
-    @media (max-width: $ss) {
-        font-size: 14px; 
-      }
+    width: 260px;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+  // @media (max-width: $ss) {
+  //     font-size: 20px;
+  //        display: flex;
+  // justify-content: center;
+  //   }
+}
+.return {
+  font-size: 18px;
+  margin-bottom: 100px;
+  @media (max-width: $ms) {
+    font-size: 15px;
+  }
+  // @media (max-width: $ss) {
+  //     font-size: 14px;
+  //   }
+}
+.textError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
 }

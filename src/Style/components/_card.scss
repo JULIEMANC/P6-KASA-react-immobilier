@@ -6,6 +6,28 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-bottom: 10%;
+  gap: 50px;
+  padding: 30px;
+
+  @media (max-width: $ms) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    align-items: center;
+    background: none;
+    padding: 20px;
+  }
+  @media (max-width: $ls) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 30px;
+    margin-inline: 0px;
+    gap: 50px;
+  }
+  @media (max-width: $Bs){
+    margin-inline: 20px;
+  }
 
   .card-bloc-item {
     text-align: center;
@@ -14,12 +36,16 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin-bottom: 15%;
+
     @media (max-width: $ms) {
       margin-bottom: 20px;
       margin-top: 20px;
-      width: 300px;
-      height: 300px;
-     }
+      width: 100%;
+      height: 255px;
+    }
+    @media (max-width: $ls){
+      margin-top: 0px ;
+    }
   }
 
   .card {
@@ -27,7 +53,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-  
+
     &::before {
       content: "";
       background-image: linear-gradient(
@@ -56,45 +82,20 @@
       overflow-wrap: break-word;
       text-align: left;
       @media (max-width: $ms) {
-       margin-top: 250px;
-
+        margin-top: 200px;
       }
-      @media (max-width: $ss){
-      margin-top: 20px;
-       }
     }
-
-
   }
 }
 
 .photocard {
   border-radius: 10px;
   object-fit: cover;
-  width: 340px;
+  width: 100%;
   height: 340px;
-  @media (max-width: $ss){
-   width: 200px;
-   height: 200px;
-  }
+
   @media (max-width: $ms) {
     width: 100%;
     height: 100%;
   }
-}
-
-.cards, .card{
-  @media (max-width: $ms) {
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-between;
-    margin-bottom: 0px;
-
-
-  }
-  // @media (max-width: $ss){
-  //   flex-direction: column;
-  //   width: 95%;
-  //   margin-bottom: 0px;
-
-  // }
 }

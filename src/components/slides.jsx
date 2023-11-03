@@ -18,19 +18,19 @@ const Slides = ({ alt, pictures }) => {
       <div className="slider">
         {pictures?.length > 1 && (
           <>
-            <button className="prev" onClick={prevSlide}>
-              <img alt="flèche prev" src="/assets/logo/Vector.png" />
+            <button className="prev carouselButton" onClick={prevSlide}>
+              <img alt="flèche prev" className="arrowOne" src="/assets/logo/Vector.png" />
             </button>
             <div className="photo-number">
                { `${currentIndex +1}/${pictures.length}`}
             </div>
-            <button className="next" onClick={nextSlide}>
-              <img alt="flèche next" src="/assets/logo/VectorLeft.png" />
+            <button className="next carouselButton" onClick={nextSlide}>
+              <img alt="flèche next" className="arrowTwo" src="/assets/logo/VectorLeft.png" />
             </button>
           </>
         )}
         {pictures?.map((picture, index) => (
-          <div
+          <div className="carousselContent"
             key={index}
             style={{ display: index === currentIndex ? "block" : "none" }}
           >
