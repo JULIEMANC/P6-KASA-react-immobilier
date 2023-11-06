@@ -6,9 +6,6 @@
     font-size: 100px;
     margin-top: 40px;
   }
-  // @media (max-width: $ss) {
-  //     font-size: 100px;
-  //   }
 }
 .return {
   margin-top: 100px;
@@ -25,11 +22,6 @@
     margin-top: 60px;
     margin-left: 50px;
   }
-  // @media (max-width: $ss) {
-  //     font-size: 20px;
-  //        display: flex;
-  // justify-content: center;
-  //   }
 }
 .return {
   font-size: 18px;
@@ -37,13 +29,9 @@
   @media (max-width: $ms) {
     font-size: 15px;
   }
-  // @media (max-width: $ss) {
-  //     font-size: 14px;
-  //   }
 }
 .textError {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }

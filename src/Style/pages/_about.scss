@@ -35,3 +35,12 @@
 .expression {
   font-weight: lighter;
 }
+.thiscollapses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: $ms) {
+    padding: 15px;
+  }}

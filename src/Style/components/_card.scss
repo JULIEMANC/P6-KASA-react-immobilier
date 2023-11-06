@@ -9,24 +9,26 @@
   gap: 50px;
   padding: 30px;
 
+  @media (max-width: $ls) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-inline: 0px;
+    background: none;
+    gap: 50px;
+    padding: 0;
+  }
   @media (max-width: $ms) {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
     align-items: center;
     background: none;
-    padding: 20px;
-  }
-  @media (max-width: $ls) {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    margin-bottom: 0px;
-    padding: 30px;
-    margin-inline: 0px;
-    gap: 50px;
+
   }
   @media (max-width: $Bs){
     margin-inline: 20px;
+    
   }
 
   .card-bloc-item {

@@ -1,36 +1,40 @@
-import React, {  useState } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
-const CollapseComponent=({ title, children })=> {
-    const [isCollapsed, setIsCollapsed] = useState(true);
-    const [isClosing, setIsClosing] = useState(true);
-   
-    const toggleCollapse = () => {
-      setIsCollapsed(!isCollapsed); 
-    };
-    const handleTransitionEnd = () => {
-      setIsClosing(!isClosing); 
-    };
+const CollapseComponent = ({ title, children }) => {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const contentRef = useRef(null);
+  const contentHeightRef = useRef(0);
 
-    return (
-      <div
-      className={`allcollapse ${isCollapsed ? '' : 'open'} ${isClosing ? '' : 'closing'}`}
-      onTransitionEnd={handleTransitionEnd}
-    >
-        <button onClick={toggleCollapse} className="collapse-button">
-          {title}
-        <img src='../assets/logo/collapse.arrow.png' 
-        alt='logo fleche collapse'
-        className={`arrow ${isCollapsed ? '' : 'rotate'}`}/>
-        </button>
-        {!isCollapsed && 
-        <div className={`collapse-content ${isCollapsed ?``: `animation`}`}  >
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
+  useEffect(() => {
+    if (isCollapsed) {
+      contentHeightRef.current = contentRef.current;
+  
+    } else {
+      contentHeightRef.current = 0;
+    }
+  }, [isCollapsed]);
+
+  return (
+    <div className={`allcollapse ${isCollapsed ? "" : "open"}`}>
+      <button onClick={toggleCollapse} className="collapse-button">
+        {title}
+        <img
+          src="../assets/logo/collapse.arrow.png"
+          alt="logo fleche collapse"
+          className={`arrow ${isCollapsed ? "" : "rotate"}`}
+        />
+      </button>
+      {!isCollapsed && (
+        <div ref={contentRef} className={`collapse-content ${isCollapsed ? `` : `animation`}`}>
           {children}
-          </div>}
-</div>
-    )
-  }
-  export default CollapseComponent;
+        </div>
+      )}
+    </div>
+  );
+};
+export default CollapseComponent;
 
-  
-  
-  

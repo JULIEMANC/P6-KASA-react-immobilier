@@ -1,17 +1,15 @@
 h1 {
   color: white;
   position: absolute;
-  margin-left: 20%;
-  margin-top: 90px;
-  text-align: center;
-  font-size: 48px;
-  @media (max-width: $ms) {
-    font-size: 30px;
-    margin-right: 60px;
-    margin-top: 60px;
-  }
+  display: flex;
+   font-size: 48px;
+  z-index: 1;
+  margin-inline: 50px;
   @media (max-width: $ls) {
     margin-left: 50px;
+  }
+  @media (max-width: $ms) {
+    font-size: 20px;
   }
 }
 
@@ -20,6 +18,8 @@ h1 {
   height: 223px;
   border-radius: 25px;
   object-fit: cover;
+  filter: brightness(50%);
+  
   @media (max-width: $ls) {
     border-radius: 25px;
   }
@@ -30,15 +30,21 @@ h1 {
   background-position: center;
   height: 223px;
   position: relative;
+  justify-content: center;
   border-radius: 25px;
   margin-top: 50px;
   width: 100%;
+  display: flex;
+  align-items: center;
 
   @media (max-width: $ms) {
     margin-top: 10px;
-    padding: 20px;
+    padding-inline: 20px;
   }
   @media (max-width: $Bs) {
-    padding: 20px;
+    padding-inline: 20px;
   }
+
+
 }
+

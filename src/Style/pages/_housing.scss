@@ -1,33 +1,35 @@
 /*Photos défilantes */
+.contenerHousing {
+  padding-inline: 20px;
+}
 .slides {
   width: 100%;
   height: 643px;
   border-radius: 25px;
   object-fit: cover;
   display: flex;
-  @media (max-width: $ms) {
-    width: 100%;
-    height: 255px;
-  }
   @media (max-width: $ls) {
     width: 100%;
     height: 500px;
   }
-  .carousselContent {
+  @media (max-width: $ms) {
     width: 100%;
+    height: 255px;
   }
 }
+
 .slider {
   display: flex;
   justify-content: center;
   margin-top: 70px;
   position: relative;
-  @media (max-width: $ms) {
-    margin-top: 0px;
-    padding: 20px;
-  }
+  .carousselContent {
+  width: 100%;
 }
-
+@media (max-width: $ms) {
+  margin-top: 0px;
+  padding: 20px;
+}
 .arrowOne,
 .arrowTwo {
   @media (max-width: $ms) {
@@ -38,15 +40,21 @@
   }
 }
 .prev {
-  left: 150px;
+  left: 50px;
   @media (max-width: $ms) {
     left: 50px;
   }
+  @media(max-width:$ls){
+   left: 20px;
+  }
 }
 .next {
-  right: 150px;
+  right: 50px;
   @media (max-width: $ms) {
     right: 50px;
+  }
+  @media(max-width:$ls){
+    right: 20px;
   }
 }
 .prev,
@@ -56,7 +64,8 @@
   color: white;
   background-color: transparent;
   border-color: transparent;
-  top: 50%;
+  top: 50%; 
+}
 }
 
 /*Div Informations en dessous */
@@ -83,7 +92,7 @@
     color: $red;
     font-weight: lighter;
     @media (max-width: $ms) {
-      font-size: 30px;
+      font-size: 18px;
       margin-top: 0px;
     }
   }
@@ -94,7 +103,7 @@
     font-weight: lighter;
     margin-top: 10px;
     @media (max-width: $ms) {
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 
