@@ -14,8 +14,11 @@ Installer Sass dans le git bash avec la commande : `npm install sass`
 -Instruction d'utilisation : 
 Aller recuperer sur Github à l'adresse ("https://github.com/JULIEMANC/P6-KASA-react-immobilier"), sur le bouton vert "Code ", si vous cliquez dessus, apparait plusieurs possibilitées : choisir "Ouvrir avec Github Desktop"
 
--Statut du projet :
-En phase de création
+-Configurer la navigation entre les pages de l'application avec React Router :
+1-installation de react rooter dom dans bash 
+2-Importation des composants nécessaires ( Browser Router, routes, Link…)
+3-Définition des routes ( dans app.js) pour définir les itinéraires de votre application. Chaque itinéraire est associé à un composant qui doit être rendu lorsque l'URL correspond à cet itinéraire.
+
 
 
 -Liens utiles : 
@@ -24,7 +27,7 @@ Ecrivez : how to create route with react-router-dom react.js => vous aurez la co
 
 `https://chrisdevcode.hashnode.dev/how-to-create-a-layout-component-react
 `
--Bugs et corrections éventuelles apportées
+
 
 
 

@@ -24,11 +24,9 @@
     margin-bottom: 0px;
     align-items: center;
     background: none;
-
   }
   @media (max-width: $Bs){
     margin-inline: 20px;
-    
   }
 
   .card-bloc-item {
@@ -89,7 +87,6 @@
     }
   }
 }
-
 .photocard {
   border-radius: 10px;
   object-fit: cover;
