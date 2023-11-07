@@ -1,30 +1,3 @@
-.collapse-button {
-  width: 100%;
-  border-radius: 10px;
-  border: none;
-  background-color: $red;
-  color: white;
-  font-size: 25px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-  cursor: pointer;
-  .arrow {
-    margin-right: 10px;
-  }
-  #text {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 80px;
-  }
-  .arrow.rotate {
-    transform: rotate(180deg);
-    transition: transform 0.5s ease;
-  }
-}
-
 .allcollapse {
   display: flex;
   flex-direction: column;
@@ -33,60 +6,58 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+
   // transition: max-height 0.3s ease-in-out;
   @media (max-width: $ms) {
     width: 100%;
     margin-top: 10px;
   }
-  .animation {
-    @keyframes slow-collapse-animation {
-      0% {
-        max-height: 0;
-        transform: translateY(-20%);
-      }
-      100% {
-        max-height: 1000px;
-        transform: translateY(0);
-      }
-    }
-  }
-}
 
-.collapse-content {
-  animation: slow-collapse-animation 0.5s linear;
-  overflow: hidden;
-  animation-fill-mode: forwards;
-  background-color: #f9f4f4;
-  border-radius: 3px 3px 10px 10px;
-  font-size: 18px;
-  color: $red;
-  padding: 10px;
-  width: 100%;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-/**collapse page housing**/
-.collapsesDescr {
-  display: flex;
-  align-items: flex-start;
-  @media (max-width: $ls) {
-    padding: 30px;
-
-  }
-  @media (max-width: $ms) {
+  .collapse-button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $red;
+    color: white;
+    cursor: pointer;
+    h3 {
+      font-size: 25px;
+      font-weight: 500;
+    }
 
-  }
-  .allcollapse:first-child {
-    margin: 0 0 20px 0;
-    margin-right: 30px;
-    @media (max-width: $ms) {
-      margin: 0;
+    .arrow {
+      margin-right: 10px;
+      transition: transform 0.5s ease;
+
+      &.down {
+        transform: rotate(180deg);
+      }
+
+      &.up {
+        transform: rotate(0deg);
+      }
     }
   }
-  ul {
-    list-style-type: none;
+
+  .collapse-content {
+    overflow: hidden;
+    background-color: #f9f4f4;
+    border-radius: 3px 3px 10px 10px;
+    font-size: 18px;
+    max-height: 0;  
+    color: $red;
+    transition: max-height 0.5s ease-in-out, padding 1s ease;
+
+    &.open {
+      display: flex;
+      padding: 3%;
+      justify-items: center;
+      align-items: center;
+      max-height: 100vh;
+    }
   }
 }

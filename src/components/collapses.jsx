@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const CollapseComponent = ({ title, children }) => {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const contentRef = useRef(null);
   const contentHeightRef = useRef(0);
 
@@ -11,30 +11,26 @@ const CollapseComponent = ({ title, children }) => {
 
   useEffect(() => {
     if (isCollapsed) {
-      contentHeightRef.current = contentRef.current;
-  
+      contentHeightRef.current = contentRef.current.scrollHeight;
     } else {
       contentHeightRef.current = 0;
     }
   }, [isCollapsed]);
 
   return (
-    <div className={`allcollapse ${isCollapsed ? "" : "open"}`}>
+    <div className="allcollapse">
       <button onClick={toggleCollapse} className="collapse-button">
-        {title}
+        <h3>{title}</h3>
         <img
           src="../assets/logo/collapse.arrow.png"
           alt="logo fleche collapse"
-          className={`arrow ${isCollapsed ? "" : "rotate"}`}
+          className={`arrow ${isCollapsed ? "up" : "down"}`}
         />
       </button>
-      {!isCollapsed && (
-        <div ref={contentRef} className={`collapse-content ${isCollapsed ? `` : `animation`}`}>
-          {children}
-        </div>
-      )}
+      <div ref={contentRef} className={`collapse-content ${isCollapsed ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 };
 export default CollapseComponent;
-
