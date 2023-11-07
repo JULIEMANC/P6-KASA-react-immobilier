@@ -14,18 +14,17 @@ const Slides = ({ alt, pictures }) => {
   };
 
   return (
-    <div className="photohousing">
       <div className="slider">
         {pictures?.length > 1 && (
           <>
             <button className="prev carouselButton" onClick={prevSlide}>
-              <img alt="flèche prev" className="arrowOne" src="/assets/logo/Vector.png" />
+              <img alt="flèche prev" className="arrow" src="/assets/logo/Vector.png" />
             </button>
             <div className="photo-number">
                { `${currentIndex +1}/${pictures.length}`}
             </div>
             <button className="next carouselButton" onClick={nextSlide}>
-              <img alt="flèche next" className="arrowTwo" src="/assets/logo/VectorLeft.png" />
+              <img alt="flèche next" className="arrow" src="/assets/logo/VectorLeft.png" />
             </button>
           </>
         )}
@@ -38,7 +37,6 @@ const Slides = ({ alt, pictures }) => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 
