@@ -8,7 +8,7 @@ const Errorpage= () => {
      <div className="textError">
             <h3 className="error">404</h3>
         
-            <p className="sentence">Oups!La page que vous demandez n'existe pas.</p>
+            <p className="sentence">Oups! La page que vous demandez n'existe pas.</p>
             <Link className='return' to="/">Retourner sur la page d'accueil</Link>
    </div>
         </Layout>
